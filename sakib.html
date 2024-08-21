@@ -14,6 +14,9 @@
     <!-- end -->
     <!-- remix i con cnd  -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+
+
     <!--  color -->
     <style>
         .color {
@@ -26,11 +29,33 @@
         }
     </style>
 
+    <!-- font add  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <style>
+        .manrope-font {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .banner-button {
+            background-color: rgba(171, 239, 95, 0.5);
+        }
+
+        .banner-bg {
+            background-color: (255, 255, 255) rgba(255, 255, 255, 0)
+        }
+    </style>
+
 </head>
 
-<body class="body">
+<body class="body manrope-font">
 
-    <header class="container mx-auto px-4 mt-2">
+    <header class="container mx-auto px-1 mt-2 banner-bg">
         <section>
             <!-- start nav bar  -->
             <div class="navbar bg-base-100">
@@ -54,7 +79,7 @@
                 </div>
 
 
-                <div class="navbar-center hidden lg:flex mr-10 ">
+                <div class="navbar-center hidden lg:flex xl:mr-20 ">
                     <ul class="menu menu-horizontal px-1">
                         <li class="flex flex-row">
 
@@ -71,9 +96,9 @@
 
 
 
-                <div class="navbar-end">
+                <div class="navbar-end  ">
                     <!-- search + bag  -->
-                    <div class="flex  items-center gap-2 mr-4 ">
+                    <div class="flex  items-center gap-2">
 
                         <button class="btn invisible sm:visible btn btn-circle">
 
@@ -100,18 +125,18 @@
 
                     </div>
 
-                    <a class="btn color font-bold  invisible sm:visible text-lg">Book Consult
+                    <a class="btn color font-bold  invisible sm:visible text-lg ml-6 md:8">Book Consult
 
                         <button class="btn btn-circle flex justify-center items-center ">
                             <i class="ri-arrow-right-up-line  text-base "></i>
                         </button>
                     </a>
-                    <!-- arrow2  -->
+                    <!--  -->
 
 
-                    <button class="btn btn-square btn-ghost visible sm:invisible">
+                    <button class="btn btn-square btn-ghost visible sm:invisible  ">
 
-                        <button class="btn btn-circle visible sm:invisible">
+                        <button class="btn btn-circle visible md:invisible">
 
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 class="inline-block h-5 w-5 stroke-current">
@@ -119,6 +144,8 @@
                                     d="M4 6h16M4 12h16M4 18h16">
                                 </path>
                             </svg>
+
+
                             <!-- menu button  -->
 
                         </button>
@@ -131,6 +158,43 @@
 
         </section>
         <!-- banner section -->
+
+
+
+        <section
+            class="container md:container mx-auto  mt-2 flex flex-col  items-center text-center md:space-y-6 space-y-2 ">
+
+
+            <div class="flex w-full justify-center  ">
+                <!--  img  -->
+                <img src="./assets/banner.png" class="w-1/2">
+
+            </div>
+
+            <div class="w-11/12 text-2xl md:text-4xl lg:text-6xl font-bold">
+                <!-- h1 text -->
+                <h1>A barn house of this design has a <br> striking appearance</h1>
+            </div>
+            <div class="w-5/6">
+                <!-- p text -->
+                <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                    weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            </div>
+            <div>
+                <!-- button -->
+                <button class="btn banner-button font-bold py-2 px-10 rounded-2xl">View Details
+
+                    <div class="border-2 color  rounded-full">
+                        <i class="ri-arrow-right-up-line text-xl rounded-full border-2 color "></i>
+                    </div>
+                    <!-- banner button -->
+
+
+
+                </button>
+            </div>
+
+        </section>
     </header>
 
 
